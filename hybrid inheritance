@@ -1,0 +1,59 @@
+package vetri;
+
+import java.util.Scanner;
+
+//public class Main {
+class Parent{
+	int a;
+    int b;
+    Parent(int a,int b){
+    this.a=a;
+    this.b=b;
+ 
+}
+    void add(){
+    System.out.println(a+b);
+    
+}
+}
+class Child1 extends Parent {
+	Child1(int a,int b){
+		super(a,b);
+		}
+	void sub() {
+		System.out.println(a-b);
+	}
+
+}
+class Child2 extends Parent{
+	Child2 (int a,int b){
+		super(a,b);
+		
+	}
+	void mul() {
+		System.out.println(a*b);
+	}
+}
+class Child3 extends Child2{
+	Child3(int a, int b){
+		super(a,b);
+	}
+	void div() {
+		System.out.println(a/b);
+	}
+}
+class Main {
+	public static void main(String[]args) {
+		Scanner s=new Scanner(System.in);
+		int a=s.nextInt();
+	    int b=s.nextInt();
+		//int c;
+	Child3 c=new Child3(a,b);
+	Child1 c1=new Child1(a,b);
+		c.add();
+		c1.sub();
+		c.mul();
+		c.div();
+		
+	}
+}
