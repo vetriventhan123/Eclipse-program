@@ -1,0 +1,60 @@
+package java_code;
+
+import java.util.Scanner;
+
+//public class Double {
+
+
+
+
+class Main2{
+	//int n;
+	void Sum (int a,int b){
+		//if(n==2)
+		
+			System.out.println(a+b);
+		
+		
+	}
+	void Sum(int a,int b,int c) {
+	//if(n==3)
+	
+		{
+			System.out.println(a*b*c);
+		}
+}
+	void Sum(int num) {
+		if(num>3) {
+		System.out.println("invalid input");
+	}
+}
+}
+class Double{
+	public static void main(String []args){
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		
+		Main2 obj=new Main2();
+		
+		if(n==2) {
+			int a=s.nextInt();
+			int b=s.nextInt();
+			obj.Sum(a,b);
+			//System.out.println(a+b);
+			
+		}
+		else if(n==3) {
+			int a=s.nextInt();
+			int b=s.nextInt();
+			int c=s.nextInt();
+			obj.Sum(a,b,c);
+			//System.out.println(a*b*c);
+			
+		}
+		else {
+			System.out.println("invalid input");
+			
+		}
+	}
+	
+}
