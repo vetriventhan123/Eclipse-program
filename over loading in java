@@ -1,0 +1,28 @@
+package day7;
+
+import java.util.Scanner;
+
+class A {
+	void mul(int a,int b) {
+		System.out.println(a*b);
+	}
+	void mul(int c,int d,int e) {
+	
+System.out.println(c*d*e);
+
+}
+}
+	public class Main{
+		public static void main(String[]args) {
+			Scanner s=new Scanner(System.in);
+			int a=s.nextInt();
+			int b=s.nextInt();
+			int c=s.nextInt();
+			int d=s.nextInt();
+			int e=s.nextInt();
+			A a1=new A();
+			a1.mul(a,b);
+			a1.mul(c,d,e);
+		}
+	}
+
