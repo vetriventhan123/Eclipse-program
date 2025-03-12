@@ -1,0 +1,43 @@
+package day8;
+
+import java.util.Scanner;
+
+abstract class Com{
+	abstract void  rectangle(int l,int b);
+	abstract void  square(int a);
+	abstract void circle(int r);
+}
+
+class Rect extends Com{
+	void rectangle(int l,int b){
+		System.out.println(l*b);
+		
+	}
+
+//ass Square extends Com{
+	void square (int a) {
+		System.out.println(a*a);
+		
+	}
+
+//ass Circle extends Com{
+	void circle(int r) {
+		System.out.println(Math.PI*r*r);
+
+}
+
+}
+class Main{
+	public static void main(String []args) {
+		Scanner sc=new Scanner(System.in);
+		int l=sc.nextInt();
+		int b=sc.nextInt();
+		int a=sc.nextInt();
+		int r=sc.nextInt();
+		Com c;
+		 Rect s=new Rect();
+		 s.square(a);
+		 s.rectangle(l, b);
+		 s.circle(r);
+}
+}
