@@ -1,0 +1,28 @@
+package java_code;
+
+import java.util.*;
+
+class V1 {
+	public static void main(String[]args) {
+		Scanner Sc=new Scanner(System.in);
+		int a=Sc.nextInt();
+		ArrayList<String> al=new ArrayList<>();
+		Sc.nextLine();
+		for(int i=0;i<a;i++){
+			al.add(Sc.nextLine());
+			
+		}
+		Collections.sort(al);
+		System.out.println(al);
+		
+	}
+
+}
+ output
+2
+vetri
+shreya
+[shreya, vetri]
+
+
+
